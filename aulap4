@@ -1,0 +1,59 @@
+print("Lista #3")
+print("Exercicio #2")
+nome = input("Digite seu nome")
+idade = int(input("Digite sua idade"))
+qtd = int(input("Quantas vezes voce gostaria de imprimir a mensagem?"))
+anoAtual = 2019
+anoNascimento = anoAtual - idade
+calculoIdade = anoNascimento + 100 
+while (qtd !=0): 
+    print(nome + ", você irá fazer 100 anos em", calculoIdade)
+    qtd = qtd -1
+    
+    print("Exercicio #4")
+numeros = [4,5,6,7,8,-3,9,-4]
+for i in range (len(numeros)):
+      if (numeros[i] < 0 ):
+          print(numeros[i])
+          
+print("Eexercicio #5")
+print(list(range(0,101,2)))
+
+
+print("Exercicio #6")
+for i in range(101):
+      if (i%2 == 0):
+          print(i)
+          print ("Exercicio #6-a")
+lst =[1,1,2,3,5,8,13,21,34,55,89]
+for item in lst:
+      if item <= 5:
+          print(item)
+          
+          print("Exercicio #6-b")
+lst = [1,1,2,3,5,8,13,21,34,55,89]
+novaLst = []
+for item in lst:
+      if item <= 5:
+          novaLst.append(item)
+print(novaLst)
+
+
+print("Exercicio #6-c")
+n = int(input("Digite um numero: "))
+lst = [1,1,2,3,5,8,13,21,34,55,89]
+novaLst = []
+for item in lst:
+      if item <= n:
+          novaLst. append(item)
+print(novaLst)
+
+print("Exercicio #8-a")
+l1 = [1,1,2,3,5,8,13,21,34,55,89]
+l2 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+novaLst = []
+for i in range(len(l1)):
+    for j in range(len(l2)):
+      if (l1[i] == l2[j]) and (l1[i-1]) and (l2[j] != l2[j-1]):
+        novaLst.append (l1[i])
+print(novaLst)
